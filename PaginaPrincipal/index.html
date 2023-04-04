@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PAGINA INICIO</title>
+    <link rel="stylesheet" href="css/main.css">
+    <script src="https://kit.fontawesome.com/8bf0a51caf.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    
+    <header id="menu">         
+        <nav>
+            <a href="index.html"><img src="img/logo.png" class="logo" alt="logo" width="200" height="50"></a>
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="/Apis/index.html">API</a></li>
+                <li><a href="/FormularioComent/index.html">FORMULARIO-COMENTARIOS</a></li>
+            </ul>
+        </nav>            
+    </header>
+
+
+
+    <section class="presentacion">
+        <div class="flex-item1">
+            <h1>BIENVENIDOS A ESTE ESPACIO, TU PAGINA WEB DE DUELISTA YU-GI-OH!</h1>
+            <p>
+                Esta es una pagina web con la cual podras filtrar y encontrar de manera facil y rapida la carta monstruo, trampa, magia y demas para que potencialices tus habilidades en el campo de batalla
+            </p>
+            <div>
+                <button class="btn-principal" type ="submit">FILTRO DE CARTAS</button>                
+                <button class="btn-secundario" type ="submit">DEJA TU COMENTARIO</button>
+            </div>            
+        </div>
+        <div class="flex-item2">
+            <img src="img/caratula2.png" alt="caratula" width="500" height="400">
+        </div>
+    </section>
+
+
+    <div class="wrapper">
+        <section class="servicios" >
+            <div class="titulo-servicios">
+                <h2> ¿ YA SABES QUE MONSTRUO ELEGIR PARA LA SIGUIENTE BATALLA ?</h2>
+                <p>
+                    No te preocupes, con este aplicativo Web podras no solo encontrar tu carta deseada sino que podras compartir tu experiencia de duelo por medio del boton Comentarios y de esta manera intercambiar consejos con otros duelistas  
+                </p>
+            </div>
+            <div class="tipo-servicios">
+                <div>
+                    <i class="fa-solid fa-skull"></i>
+                    <h3>Trampa</h3>
+                    <p>
+                    Debe ser Colocada en la Zona de Magia y Trampas y, generalmente, sólo puede ser activada después de que el turno actual haya terminado
+                    </p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-dragon"></i>
+                    <h3>Monstruo</h3>
+                    <p>
+                        Monstruos que un jugador puede Invocar y hacer batallar contra otros o directamente contra su adversario durante la Battle Phase
+                    </p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-hat-wizard"></i>
+                    <h3>Magia</h3>
+                    <p>
+                        Suelen tener efectos que benefician al controlador de la carta, o perjudican al adversario.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p class="footer-content">
+            Taller 1 &copy;Derechos reservados todos a la U Front end 
+        </p>
+    </footer>
+    <script>
+       const menu = document.getElementById('menu');
+       window.onscroll = function(){
+           if(window.pageYOffset>10){
+               menu.style.backgroundColor='#fff';
+           }
+           else{
+               menu.style.backgroundColor='initial';
+           }
+       }
+    </script>
+   
+</body>
+</html>
